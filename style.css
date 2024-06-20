@@ -31,11 +31,27 @@ h1 {
 h2 {
     font-family: serif;
     font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.texto-com-fundo {
+    background-color: #3f314d;
+    width: fit-content;
+    padding: 10px;
+}
+
+.bold {
+    font-weight: bolder;
 }
 
 .amostra-codigo {
     width: 400px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+}
+
+.botao > p {
+    text-align: justify;
+    font-weight: bold;
 }
 
 .botao {
@@ -53,11 +69,35 @@ h2 {
     height: 100px;
     width: 250px;
     border-radius: 25px;
-    background-color: rgb(115, 115, 84);
+    background-color: rgb(122, 122, 54);
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.45);
 }
 
 .botao:hover {
-    background-color: rgb(82, 82, 60);
+    background-color: rgb(77, 77, 34);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);    
+}
+
+.clique:active {
+    background-color: rgb(39, 39, 17);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.pseudo {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: rgb(122, 122, 54);
+    width: fit-content;
+}
+
+.pseudo::before {
+    content: '=>';
+}
+
+.pseudo::after {
+    content: '<=';
 }
